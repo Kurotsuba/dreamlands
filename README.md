@@ -10,6 +10,7 @@ A online chatroom-like game table both KP and PL can use together.
 - PC/NPC management
 - Dice
 - Log
+- Battlefield
 
 #### Playground 
 Display background picture and BGM uploaded by KP.  
@@ -23,8 +24,12 @@ Should be multi-channel as some message should not be displayed to everyone in t
 #### PC/NPC management  
 PC and NPC can be create in this part. Parameter, job, story and other status can be saved. Status like HP and Sanity can be update during game play.
 
-#### Dice
+#### Dice  
 A dice for the game. Can automatically judge the result of a check (san check, pow check, skill check, etc.). 
 
 #### Log
 Keep the game history in the log. Can be export in some usual format (consider in txt or xml). Maybe can import external log?
+
+#### Battlefield  
+大小由kp决定的方形战斗棋盘  
+追逐轮，自伸缩

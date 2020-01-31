@@ -1,0 +1,100 @@
+Player Charactor Data Struct
+
+# inspired by 丛雨official's charactor card
+
+Charactor
+
+--  type: <charactor_type>
+
+--  basic info: 
+---     charactor name: <string>
+---     player name: <string>
+---     gender: <string>
+---     job: <job>
+---     age: <int>
+---     era: <era_type>
+---     live_in: <string>
+
+--  parameter: 
+---     STR: <int>
+---     CON: <int>
+---     SIZ: <int> 
+---     DEX: <int>
+---     APP: <int>
+---     INT: <int>
+---     POW: <int>
+---     EDU: <int>
+---     LCK: <int>
+
+--  status: 
+---     HP: <int>
+---     HP_limit: <int>
+---     SAN: <int>
+---     SAN_limit: <int> 
+---     MP: <int> 
+---     MP_limit: <int>
+---     MP_recover: <int> 
+---     MOV: <int> 
+---     MOV_adjust: <int>
+---     MOV_type: <mov_type> 
+---     ARM: <armor_type> 
+
+--  fighting:
+---     DB: <DB_type>
+---     Build: <int>
+---     Dodge: <int>
+
+--  skill: 
+---     skill1: <skill_type>
+...
+
+--  weapons:
+---     weapon1: <weapon_type>
+...
+
+
+--  item:
+---     pocket:
+----        item1: <item_type>
+...
+---     bag:
+----    item1: <item_type>
+...
+
+--  background
+---     appearance: <int>
+!!
+
+
+Type Define
+
+--  charactor_type
+enum: PC, NPC
+
+--  era_type
+enum: 1920s, morden
+
+--  mov_type
+enum: walk, wheel, fly, dive, swim, taxi
+
+--  skill_type
+---     job_skill: <bool>
+---     name: <string>
+---     init_val: <int>
+---     growth: <int>
+---     job_point: <int>
+---     interest_point: <int>
+---     success_mark: <bool>
+
+
+--  item_type
+---     status: <string>
+---     position: <string>
+---     name: <string>
+
+
+--  weapon_type
+
+--  DB_type
+
+--  armor_type
