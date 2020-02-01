@@ -10,7 +10,7 @@ Charactor
 ---     charactor name: <string>
 ---     player name: <string>
 ---     gender: <string>
----     job: <job>
+---     job: <job_type>
 ---     age: <int>
 ---     era: <era_type>
 ---     live_in: <string>
@@ -61,9 +61,13 @@ Charactor
 ----    item1: <item_type>
 ...
 
+--  spell
+---     spell1: <spell_type>
+...
+
 --  background
----     appearance: <int>
-!!
+---     background: <string>
+
 
 
 Type Define
@@ -78,7 +82,6 @@ enum: 1920s, morden
 enum: walk, wheel, fly, dive, swim, taxi
 
 --  skill_type
----     job_skill: <bool>
 ---     name: <string>
 ---     init_val: <int>
 ---     growth: <int>
@@ -92,9 +95,31 @@ enum: walk, wheel, fly, dive, swim, taxi
 ---     position: <string>
 ---     name: <string>
 
+--  job_type
+---     name: <string>
+---     job_point: <int>
+---     job_skill: <skill_type>[]
+---     job_skill_option: <skill_type>[]
+---     job_credit_min: <int>
+---     job_credit_max: <int>
+
+--  spell_type
+---     name: <string>
+---     cost: <string>
+---     effect: <string>
 
 --  weapon_type
+---     name: <string>
+---     skill: <skill_type>
+---     damage: <string>
+---     range: <int>
+---     rate: <int>
+---     load: <int>
 
 --  DB_type
+enum: -2, -1, 0, 1d4, 1d6, 2d6, 3d6, 4d6
 
 --  armor_type
+---     name: <string>
+---     arm_val: <int>
+---     description: <string>

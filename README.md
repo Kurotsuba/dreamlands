@@ -31,5 +31,5 @@ A dice for the game. Can automatically judge the result of a check (san check, p
 Keep the game history in the log. Can be export in some usual format (consider in txt or xml). Maybe can import external log?
 
 #### Battlefield  
-大小由kp决定的方形战斗棋盘  
-追逐轮，自伸缩
+Normal: a chessboard like battlefield, size can be assigned by KP.    
+Chasing: a battlefield with dynamic size and edge, edge will change during chasing to simulate a road or something.
