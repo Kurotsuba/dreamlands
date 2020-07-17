@@ -1,7 +1,7 @@
 # dreamlands
-An online CoC TRPG game table project.
+A CoC TRPG game table project.
  
-A online chatroom-like game table both KP and PL can use together. 
+A chatroom-like game table both KP and PL can use together.  Should be deployed on a server with ease.
 
 ## Components
 
@@ -15,7 +15,8 @@ A online chatroom-like game table both KP and PL can use together.
 #### Playground 
 Display background picture and BGM uploaded by KP.  
 Show avatars of PC and NPC, and anything necessary for the game. 
-Players mainly use this part during gaming. 
+Players mainly use this part during gaming.   
+The display of the room（部屋） can be saved in a config file, which will make it easy to share completed room with other KP.  
 
 #### Multi-channel chatroom
 Chatroom, used by KP and PL to communication.  
